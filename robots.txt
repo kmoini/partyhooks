@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://partyhooks.com/sitemap.xml

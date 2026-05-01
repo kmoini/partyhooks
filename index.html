@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Party Hook Generator — TikTok Reel Ideas for Weddings, Birthdays & Celebrations</title>
+  <meta name="description" content="Enter your occasion → get 3 AI-generated TikTok hooks for your party reel. Made for guests, not creators. Free, instant, no sign-up. Works for weddings, birthdays, bachelorettes, and more." />
+  <meta name="keywords" content="party tiktok hooks, wedding reel ideas, birthday tiktok hooks, bachelorette reel ideas, graduation tiktok hooks, party reel generator, tiktok hooks for weddings, celebration reel ideas" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://partyhooks.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Party Hook Generator — TikTok Reel Ideas for Weddings, Birthdays & Celebrations" />
+  <meta property="og:description" content="Enter your occasion → get 3 AI-generated TikTok hooks for your party reel. Free, no sign-up." />
+  <meta property="og:url" content="https://partyhooks.com" />
+  <meta property="og:site_name" content="PartyHooks" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Party Hook Generator — TikTok Reel Ideas for Weddings & Birthdays" />
+  <meta name="twitter:description" content="Enter your occasion → get 3 AI-generated TikTok hooks for your party reel. Free, no sign-up." />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "PartyHooks — Party TikTok Hook Generator",
+    "url": "https://partyhooks.com",
+    "description": "Free AI TikTok hook generator for party guests. Enter your occasion and get 3 ready-to-post hooks for your wedding, birthday, or celebration reel.",
+    "applicationCategory": "SocialNetworkingApplication",
+    "operatingSystem": "Any",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is a TikTok party hook?",
+        "acceptedAnswer": { "@type": "Answer", "text": "A party hook is the opening line of your TikTok caption or reel — the thing that makes someone stop scrolling. For party reels, the best hooks are POV-style, emotional, or funny moments that guests relate to instantly." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need to be a TikTok creator to use this?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No — PartyHooks is built for people who rarely post. You're going to a wedding or birthday, you want one great reel, and you need something to say. Enter your occasion and get a hook in seconds." }
+      },
+      {
+        "@type": "Question",
+        "name": "Is this free?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Generating hooks is 100% free with no sign-up required. Adding an AI dance video to your reel is a paid feature on SnapDance." }
+      },
+      {
+        "@type": "Question",
+        "name": "What occasions work with this generator?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Any celebration — weddings, birthdays, bachelorettes, graduations, anniversaries, baby showers, New Year's Eve, and more. The more specific you are (e.g. 'outdoor wedding' vs 'wedding'), the better the hooks." }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I add a dance to my party reel?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Click 'Add a dance to your reel' under any hook — SnapDance's AI puts you in a matching dance video using just a selfie. No filming, no choreography." }
+      }
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="/">PH</a>
+    <span class="logo-text">partyhooks.com</span>
+  </header>
+
+  <main>
+    <section class="hero">
+      <span class="hero-eyebrow">For guests, not creators</span>
+      <h1>The Party Reel Hook Generator</h1>
+      <p class="hero-sub">You're going to a wedding, birthday, or bachelorette. You want to post a reel. You don't need to be an influencer — just enter your occasion and get 3 ready-to-post hooks in seconds.</p>
+
+      <form id="hookForm" class="hook-form" autocomplete="off">
+        <div class="input-row">
+          <input
+            id="occasionInput"
+            type="text"
+            placeholder="Your occasion (e.g. wedding, bachelorette, birthday…)"
+            maxlength="80"
+            required
+            autocomplete="off"
+            spellcheck="false"
+          />
+          <button type="submit" id="generateBtn">
+            <span id="btnLabel">Get Party Hooks</span>
+            <span id="btnSpinner" class="spinner" hidden></span>
+          </button>
+        </div>
+        <p id="formError" class="form-error" hidden></p>
+      </form>
+
+      <div class="examples">
+        <span class="examples-label">Popular occasions:</span>
+        <button class="chip" data-occasion="wedding guest">wedding</button>
+        <button class="chip" data-occasion="birthday party">birthday</button>
+        <button class="chip" data-occasion="bachelorette party">bachelorette</button>
+        <button class="chip" data-occasion="graduation party">graduation</button>
+        <button class="chip" data-occasion="anniversary party">anniversary</button>
+        <button class="chip" data-occasion="baby shower">baby shower</button>
+        <button class="chip" data-occasion="New Year's Eve party">New Year's Eve</button>
+        <button class="chip" data-occasion="bridal shower">bridal shower</button>
+      </div>
+    </section>
+
+    <section id="results" class="results" hidden>
+      <h2 class="results-title">Your Party Hooks</h2>
+      <div id="hookCards" class="hook-cards"></div>
+    </section>
+
+    <section class="how-it-works">
+      <h2>How it works</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <p>Enter your occasion — our AI generates hooks that work for party guests, not just influencers</p>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <p>Get 3 ready-to-post hooks — POV-style, reaction, and guest perspective — each matched to a dance template</p>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <p>Click "Add a dance to your reel" — AI puts you in the dance video using just a selfie, ready to post</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="differentiator">
+      <h2>Built for the Guest, Not the Influencer</h2>
+      <p>Most hook generators assume you post every day. PartyHooks assumes you post once a year — for your best friend's wedding, your sister's bachelorette, or your own birthday. Every hook is written from a guest's perspective: POV-style, emotional, and ready to use without sounding like a content creator.</p>
+    </section>
+
+    <section class="faq">
+      <h2>Frequently asked questions</h2>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>What is a TikTok party hook?</summary>
+          <p>A party hook is the opening line of your TikTok caption or reel — the thing that makes someone stop scrolling. For party reels, the best hooks are POV-style, emotional, or funny moments that guests relate to instantly.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Do I need to be a TikTok creator to use this?</summary>
+          <p>No — PartyHooks is built for people who rarely post. You're going to a wedding or birthday, you want one great reel, and you need something to say. Enter your occasion and get a hook in seconds.</p>
+        </details>
+        <details class="faq-item">
+          <summary>What occasions work with this?</summary>
+          <p>Any celebration — weddings, birthdays, bachelorettes, graduations, anniversaries, baby showers, New Year's Eve, and more. The more specific you are (e.g. "outdoor wedding" or "surprise birthday"), the better the hooks.</p>
+        </details>
+        <details class="faq-item">
+          <summary>How do I add a dance to my reel?</summary>
+          <p>Click "Add a dance to your reel" under any hook — SnapDance's AI puts you in a matching dance video using just a selfie. No filming, no choreography, no skill needed.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Is this free?</summary>
+          <p>Generating hooks is 100% free with no sign-up required. Adding an AI dance video to your reel is a paid feature on SnapDance.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="occasions-nav">
+      <h3>Browse by occasion</h3>
+      <div class="occasion-links">
+        <a href="/wedding-hooks">Wedding Hooks</a>
+        <a href="/birthday-hooks">Birthday Hooks</a>
+        <a href="/bachelorette-hooks">Bachelorette Hooks</a>
+        <a href="/graduation-hooks">Graduation Hooks</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Powered by <a href="https://snapdance.app" target="_blank" rel="noopener">SnapDance</a> — AI dance video generator</p>
+  </footer>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>

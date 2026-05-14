@@ -425,3 +425,20 @@ main { flex: 1; }
   .input-row { flex-direction: column; border-radius: 16px; padding: 12px 16px; gap: 8px; }
   #generateBtn { border-radius: 10px; justify-content: center; }
 }
+
+/* ── Site nav (added 2026-05-13 for /blog link) ── */
+.site-header { display: flex; align-items: center; gap: 14px; }
+.site-nav { margin-left: auto; }
+.site-nav .nav-link {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+.site-nav .nav-link:hover {
+  background: var(--bg-card);
+  color: var(--accent);
+}

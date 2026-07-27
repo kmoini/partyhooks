@@ -1,0 +1,24 @@
+# PartyHooks
+
+> Free party hook generator — enter your occasion, get 3 AI-generated TikTok hooks for your party reel. Made for guests, not creators.
+
+PartyHooks is for people attending an event (not professional content creators) who want a fun, on-theme TikTok reel opening line for a wedding, birthday, bachelorette party, or graduation. Enter the occasion and get 3 AI-generated hooks instantly, free, no sign-up.
+
+## Pages
+
+- [Home](https://partyhooks.com/): The hook generator tool, plus an FAQ on how it works.
+- [Blog](https://partyhooks.com/blog): Articles on viral party/event content and guest entertainment trends.
+- [Best Interactive Party Entertainment Ideas](https://partyhooks.com/blog/best-interactive-party-entertainment-ideas-2026)
+- [How Party Vendors Use AI Experiences to Make Events Viral](https://partyhooks.com/blog/how-party-vendors-use-ai-experiences-make-events-viral-2026)
+- [Why Viral Guest Experiences Are Replacing Traditional Party Entertainment](https://partyhooks.com/blog/why-viral-guest-experiences-replacing-traditional-party-entertainment-2026)
+
+## Occasion pages
+
+- [Wedding hooks](https://partyhooks.com/wedding-hooks)
+- [Birthday hooks](https://partyhooks.com/birthday-hooks)
+- [Bachelorette hooks](https://partyhooks.com/bachelorette-hooks)
+- [Graduation hooks](https://partyhooks.com/graduation-hooks)
+
+## Related
+
+- [SnapDance](https://snapdance.app): The AI dance video generator behind the dance-template experiences PartyHooks points guests toward — upload a selfie, generate a video of yourself performing a trending dance.

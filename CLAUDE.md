@@ -26,6 +26,8 @@ The Railway endpoint is the same one used by viralhooks.app. Body: `{ niche: "<o
 | `birthday-hooks.html` | `/birthday-hooks` | Occasion landing page |
 | `bachelorette-hooks.html` | `/bachelorette-hooks` | Occasion landing page |
 | `graduation-hooks.html` | `/graduation-hooks` | Occasion landing page |
+| `baby-shower-hooks.html` | `/baby-shower-hooks` | Occasion landing page |
+| `bridal-shower-hooks.html` | `/bridal-shower-hooks` | Occasion landing page |
 | `blog.html` | `/blog` | Blog index |
 | `blog/<slug>.html` | `/blog/<slug>` | Blog posts (3 live) |
 

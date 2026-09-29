@@ -74,6 +74,16 @@
   </script>
 
   <link rel="stylesheet" href="/css/styles.css" />
+  <style>
+    .blog-teaser { max-width:900px; margin:0 auto; padding:0 24px 72px; border-top:1px solid var(--border); padding-top:56px; }
+    .blog-teaser h2 { font-size:1.4rem; font-weight:800; text-align:center; margin-bottom:28px; }
+    .blog-teaser-grid { display:grid; grid-template-columns:1fr; gap:16px; }
+    @media (min-width:700px) { .blog-teaser-grid { grid-template-columns:repeat(3,1fr); } }
+    .blog-teaser-card { background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius); padding:20px 22px; text-decoration:none; color:var(--text); display:block; transition:border-color 0.15s; }
+    .blog-teaser-card:hover { border-color:var(--accent); }
+    .blog-teaser-card h3 { font-size:1rem; font-weight:700; line-height:1.35; margin:0 0 8px; }
+    .blog-teaser-card p { color:var(--text-secondary); font-size:0.88rem; line-height:1.5; margin:0; }
+  </style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -206,6 +216,24 @@
       <h2 style="font-size:1.4rem;font-weight:800;line-height:1.3;margin-bottom:14px;">Add a dance to your party reel</h2>
       <p style="color:var(--text-secondary);font-size:1rem;line-height:1.7;margin-bottom:28px;">Turn a guest selfie into a TikTok dance video that pairs perfectly with your hook. Free, no sign-up.</p>
       <a href="https://snapdance.app/try?utm_source=partyhooks&utm_medium=cta&utm_campaign=tentpole" target="_blank" rel="noopener" class="btn-generate" style="display:inline-flex;font-size:1rem;padding:13px 28px;">Try SnapDance Free →</a>
+    </div>
+  </section>
+
+  <section class="blog-teaser">
+    <h2>From the blog</h2>
+    <div class="blog-teaser-grid">
+      <a href="/blog/how-party-vendors-use-ai-experiences-make-events-viral-2026" class="blog-teaser-card">
+        <h3>How Party Vendors Are Using AI Experiences to Make Events Go Viral in 2026</h3>
+        <p>How viral guest experiences and AI dance videos are becoming vendors' biggest marketing advantage.</p>
+      </a>
+      <a href="/blog/why-viral-guest-experiences-replacing-traditional-party-entertainment-2026" class="blog-teaser-card">
+        <h3>Why Viral Guest Experiences Are Replacing Traditional Party Entertainment in 2026</h3>
+        <p>Why interactive, shareable moments are replacing passive entertainment at modern events.</p>
+      </a>
+      <a href="/blog/best-interactive-party-entertainment-ideas-2026" class="blog-teaser-card">
+        <h3>Best Interactive Party Entertainment Ideas for Weddings, Birthdays &amp; Corporate Events in 2026</h3>
+        <p>Ten interactive entertainment ideas guests actually want to film and post.</p>
+      </a>
     </div>
   </section>
 

@@ -59,8 +59,13 @@ Breaking this routes traffic to the wrong dashboard card on snapdance.app.
 ## Deploy
 
 ```bash
-cd C:\PROJECTS\partyhooks && vercel --prod --yes
+cd C:\PROJECTS\partyhooks && npm run deploy
 ```
+
+Runs `vercel --prod --yes` then pings IndexNow (Bing/Yandex/Naver/Seznam.cz —
+Google doesn't participate, GSC stays separate) with any sitemap URL not yet
+recorded in `.indexnow-submitted.json`. Best-effort — never fails the deploy.
+Key file `ea6c71e9ebb171e5112c2567148f4040.txt` must stay at the site root.
 
 Branch is `master` (not `main`). Push to GitHub separately:
 ```bash
